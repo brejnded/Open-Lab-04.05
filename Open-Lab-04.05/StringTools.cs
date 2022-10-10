@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Open_Lab_04._05
 {
@@ -6,7 +6,15 @@ namespace Open_Lab_04._05
     {
         public string Repeat(string orig, int n)
         {
-            throw new NotImplementedException();
+            string empty = string.Empty;
+
+            for (int i = 0; i < orig.Length; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    empty += orig[i];               }
+            }
+            return empty;
         }
     }
 }
